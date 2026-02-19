@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minyak Gaharu Premium - Agarwood Oil Kualitas Ekspor | LADAIK</title>
+    <meta name="description" content="Minyak Gaharu (Agarwood Oil) kualitas ekspor. Wewangian premium yang disukai Rasulullah. Aromaterapi alami untuk spiritualitas dan kesegaran.">
+    <meta name="keywords" content="minyak gaharu, agarwood oil, oud oil, gaharu asli, wewangian islami, aromaterapi gaharu">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 100%);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo-text {
+            font-size: 2em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header-cta {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .header-cta:hover {
+            transform: translateY(-2px);
+        }
+
+        .product-hero {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .product-image-main {
+            width: 100%;
+            max-width: 400px;
+            height: 450px;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            box-shadow: 0 20px 60px rgba(212, 175, 55, 0.2);
+        }
+
+        .product-image-main img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .product-details {
+            padding: 20px;
+        }
+
+        .breadcrumb {
+            color: #b8b8b8;
+            margin-bottom: 20px;
+            font-size: 0.95em;
+        }
+
+        .breadcrumb a {
+            color: #d4af37;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .product-title {
+            font-size: 2.5em;
+            color: #d4af37;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .product-subtitle {
+            color: #b8b8b8;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .product-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
+            color: #000;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-bottom: 25px;
+        }
+
+        .rating {
+            color: #d4af37;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .product-price {
+            background: rgba(212, 175, 55, 0.1);
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            margin-bottom: 25px;
+        }
+
+        .price-label {
+            color: #b8b8b8;
+            font-size: 0.95em;
+            margin-bottom: 8px;
+        }
+
+        .price-value {
+            font-size: 2.2em;
+            color: #d4af37;
+            font-weight: 700;
+        }
+
+        .price-note {
+            color: #b8b8b8;
+            font-size: 0.9em;
+            margin-top: 8px;
+        }
+
+        .product-highlights {
+            list-style: none;
+            margin: 25px 0;
+        }
+
+        .product-highlights li {
+            padding: 12px 0;
+            color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .product-highlights li::before {
+            content: '✓';
+            color: #25D366;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .cta-button {
+            width: 100%;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            padding: 18px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.6);
+        }
+
+        .gallery-section {
+            max-width: 1200px;
+            margin: 80px auto;
+            padding: 0 2rem;
+        }
+
+        .section-title {
+            font-size: 2em;
+            color: #d4af37;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            height: 280px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            border-color: #d4af37;
+            box-shadow: 0 10px 40px rgba(212, 175, 55, 0.3);
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .description-section {
+            max-width: 1000px;
+            margin: 80px auto;
+            padding: 0 2rem;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 50px;
+            border-radius: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        .description-title {
+            font-size: 1.8em;
+            color: #d4af37;
+            margin-bottom: 25px;
+        }
+
+        .description-text {
+            color: #e0e0e0;
+            line-height: 1.8;
+            font-size: 1.05em;
+            margin-bottom: 20px;
+        }
+
+        .benefits-list {
+            margin: 30px 0;
+        }
+
+        .benefits-list h4 {
+            color: #d4af37;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 1.2em;
+        }
+
+        .benefits-list ul {
+            list-style: none;
+            margin-left: 20px;
+        }
+
+        .benefits-list li {
+            padding: 10px 0;
+            color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .benefits-list li::before {
+            content: '→';
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        .cta-final {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 50px;
+            text-align: center;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(0, 0, 0, 0.3) 100%);
+            border-radius: 20px;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .cta-final h2 {
+            font-size: 2em;
+            color: #d4af37;
+            margin-bottom: 20px;
+        }
+
+        .cta-final p {
+            color: #b8b8b8;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .contact-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1em;
+            transition: all 0.3s ease;
+        }
+
+        .contact-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+        }
+
+        footer {
+            background: #000;
+            padding: 40px 2rem;
+            text-align: center;
+            border-top: 2px solid rgba(212, 175, 55, 0.3);
+            margin-top: 100px;
+        }
+
+        .footer-text {
+            color: #b8b8b8;
+            margin-bottom: 15px;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .footer-link {
+            color: #d4af37;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #ffd700;
+        }
+
+        @media (max-width: 768px) {
+            .product-hero {
+                grid-template-columns: 1fr;
+            }
+
+            .product-title {
+                font-size: 1.8em;
+            }
+
+            .description-section {
+                padding: 30px;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-text" style="text-decoration: none;">LADAIK</a>
+            <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20tanya%20Minyak%20Gaharu" class="header-cta" target="_blank">
+                Tanya Harga
+            </a>
+        </div>
+    </header>
+
+    <div class="product-hero">
+        <div class="product-image-main">
+            <img src="minyak-gaharu.jpg" alt="Minyak Gaharu" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1luNHfGNlHABhE1PbhXFKhFEdpzu2bVf_';">
+        </div>
+
+        <div class="product-details">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> / <a href="index.html#products">Produk</a> / Minyak Gaharu
+            </div>
+
+            <h1 class="product-title">Minyak Gaharu</h1>
+            <p class="product-subtitle">Agarwood Oil - Kualitas Ekspor</p>
+            <span class="product-badge">Premium</span>
+
+            <div class="rating">⭐⭐⭐⭐⭐ (95+ Ulasan)</div>
+
+            <div class="product-price">
+                <div class="price-label">Harga Mulai:</div>
+                <div class="price-value">Hubungi Kami</div>
+                <div class="price-note">*Tersedia berbagai grade (1jt - 5jt+)</div>
+            </div>
+
+            <ul class="product-highlights">
+                <li>Wewangian Mewah & Kelas Dunia</li>
+                <li>Aromaterapi Alami untuk Meditasi</li>
+                <li>Disukai Rasulullah SAW</li>
+                <li>Untuk Keperluan Spiritual & Ibadah</li>
+                <li>Tahan Lama & Ekonomis (Sedikit Banyak Wangi)</li>
+                <li>Sertifikat Keaslian & Kualitas Ekspor</li>
+            </ul>
+
+            <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20tanya%20tentang%20Minyak%20Gaharu%20serta%20berbagai%20grade%20dan%20harganya" class="cta-button" target="_blank">
+                <svg width="24" height="24" viewBox="0 0 32 32" fill="white">
+                    <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z"/>
+                </svg>
+                Tanya Harga & Varian
+            </a>
+        </div>
+    </div>
+
+    <div class="gallery-section">
+        <h2 class="section-title">Galeri Produk</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="minyak-gaharu-1.jpg" alt="Minyak Gaharu" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1luNHfGNlHABhE1PbhXFKhFEdpzu2bVf_';">
+            </div>
+            <div class="gallery-item">
+                <img src="minyak-gaharu-2.jpg" alt="Botol Minyak Gaharu" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1luNHfGNlHABhE1PbhXFKhFEdpzu2bVf_';">
+            </div>
+            <div class="gallery-item">
+                <img src="minyak-gaharu-3.jpg" alt="Warna Minyak Gaharu" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1luNHfGNlHABhE1PbhXFKhFEdpzu2bVf_';">
+            </div>
+        </div>
+    </div>
+
+    <div class="description-section">
+        <h2 class="description-title">Tentang Minyak Gaharu</h2>
+        
+        <p class="description-text">
+            Minyak Gaharu LADAIK adalah ekstrak minyak wangi premium yang dihasilkan dari kayu gaharu pilihan kualitas ekspor. Setiap tetes minyak gaharu kami mengandung aroma yang kaya, mewah, dan tahan lama yang dikenal sebagai "oud" atau "agarwood" di kelas dunia.
+        </p>
+
+        <p class="description-text">
+            Gaharu adalah kayu yang sangat berharga dan langka, sering disebut sebagai "emas hijau" karena nilai ekonomisnya yang sangat tinggi. Minyaknya telah digunakan selama berabad-abad dalam tradisi Timur Tengah dan Asia Tenggara untuk keperluan spiritual dan aromaterapi.
+        </p>
+
+        <div class="benefits-list">
+            <h4>Keunggulan Produk</h4>
+            <ul>
+                <li>Aroma Mewah yang Tahan Lama 8-12 Jam</li>
+                <li>Melancarkan Konsentrasi & Meditasi Spiritual</li>
+                <li>Cocok untuk Solat & Ibadah</li>
+                <li>Meningkatkan Suasana Hati & Ketenangan</li>
+                <li>Ekonomis (Sedikit Saja Sudah Tercium Wangi)</li>
+                <li>Digunakan Rasulullah SAW</li>
+            </ul>
+
+            <h4>Grade & Jenis Minyak Gaharu</h4>
+            <ul>
+                <li>Grade A: Kualitas Tertinggi, Aroma Terkuat (5+ Juta)</li>
+                <li>Grade B: Kualitas Premium, Aroma Yang Tahan Lama (2-3 Juta)</li>
+                <li>Grade C: Kualitas Baik, Untuk Sehari-hari (1-1.5 Juta)</li>
+                <li>Semua Grade Asli & Telah Disertifikasi</li>
+            </ul>
+
+            <h4>Cara Penggunaan</h4>
+            <ul>
+                <li>Teteskan pada kulit (pergelangan tangan, di belakang telinga)</li>
+                <li>Oleskan pada pakaian atau tasbih untuk aroma tahan lama</li>
+                <li>Gunakan sebelum solat untuk fokus dan khusyuk</li>
+                <li>Simpan di tempat sejuk untuk menjaga kualitas</li>
+                <li>Gunakan dengan hemat karena sangat kuat baunya</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="cta-final">
+        <h2>Rasakan Kemewahan Gaharu Asli</h2>
+        <p>
+            Minyak Gaharu LADAIK adalah investasi untuk kualitas dan spiritual Anda. 
+            Konsultasikan dengan Ustadz Yusuf untuk memilih grade yang sesuai dengan kebutuhan dan budget Anda.
+        </p>
+        <a href="https://wa.me/6281375176653?text=Saya%20tertarik%20dengan%20Minyak%20Gaharu%20dan%20ingin%20tahu%20lebih%20detail%20tentang%20berbagai%20grade%20serta%20harganya" class="contact-button" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 32 32" fill="white">
+                <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0z"/>
+            </svg>
+            Konsultasi Gratis
+        </a>
+    </div>
+
+    <footer>
+        <p class="footer-text">LADAIK - Madu & Gaharu Berkualitas Ekspor</p>
+        <p class="footer-text">Asli dari Indonesia, Dipercaya Umat Muslim</p>
+        <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a>
+            <a href="index.html#products" class="footer-link">Produk</a>
+            <a href="https://wa.me/6281375176653" class="footer-link" target="_blank">Kontak</a>
+            <span style="color: #666;">|</span>
+            <a href="privacy-policy.html" class="footer-link">Privacy</a>
+            <a href="terms-of-service.html" class="footer-link">Terms</a>
+        </div>
+        <p class="footer-text" style="margin-top: 20px; font-size: 0.9em;">
+            © 2025 LADAIK. WhatsApp: +62 813-7517-6653
+        </p>
+    </footer>
+</body>
+</html>

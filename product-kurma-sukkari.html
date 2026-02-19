@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurma Sukkari - Raja Kurma Premium dari Al-Qassim | LADAIK</title>
+    <meta name="description" content="Kurma Sukkari 'Raja Kurma' dari Al-Qassim Arab Saudi. Kurma premium dengan rasa manis seperti gula, tekstur juicy, antioksidan tinggi.">
+    <meta name="keywords" content="kurma sukkari, kurma al-qassim, kurma arab saudi, kurma raja, kurma premium, sukari">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Poppins', sans-serif; background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%); color: #ffffff; overflow-x: hidden; }
+        header { background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 100%); padding: 1rem 2rem; position: sticky; top: 0; z-index: 999; backdrop-filter: blur(10px); border-bottom: 2px solid rgba(212, 175, 55, 0.3); }
+        .header-content { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px; }
+        .logo-text { font-size: 2em; font-weight: 700; background: linear-gradient(135deg, #d4af37 0%, #ffd700 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .header-cta { background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); color: white; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: 600; transition: all 0.3s ease; }
+        .header-cta:hover { transform: translateY(-2px); }
+        .product-hero { max-width: 1200px; margin: 60px auto; padding: 0 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+        .product-image-main { width: 100%; max-width: 400px; height: 450px; border-radius: 20px; overflow: hidden; border: 2px solid rgba(212, 175, 55, 0.3); box-shadow: 0 20px 60px rgba(212, 175, 55, 0.2); }
+        .product-image-main img { width: 100%; height: 100%; object-fit: cover; }
+        .product-details { padding: 20px; }
+        .breadcrumb { color: #b8b8b8; margin-bottom: 20px; font-size: 0.95em; }
+        .breadcrumb a { color: #d4af37; text-decoration: none; }
+        .breadcrumb a:hover { text-decoration: underline; }
+        .product-title { font-size: 2.5em; color: #d4af37; margin-bottom: 10px; font-weight: 700; }
+        .product-subtitle { color: #b8b8b8; font-size: 1.2em; margin-bottom: 20px; }
+        .product-badge { display: inline-block; background: linear-gradient(135deg, #1e90ff 0%, #00bfff 100%); color: white; padding: 8px 20px; border-radius: 50px; font-weight: 600; margin-bottom: 25px; }
+        .rating { color: #d4af37; margin-bottom: 20px; font-size: 1.1em; }
+        .product-price { background: rgba(212, 175, 55, 0.1); padding: 25px; border-radius: 15px; border: 1px solid rgba(212, 175, 55, 0.3); margin-bottom: 25px; }
+        .price-label { color: #b8b8b8; font-size: 0.95em; margin-bottom: 8px; }
+        .price-value { font-size: 2.2em; color: #d4af37; font-weight: 700; }
+        .price-note { color: #b8b8b8; font-size: 0.9em; margin-top: 8px; }
+        .product-highlights { list-style: none; margin: 25px 0; }
+        .product-highlights li { padding: 12px 0; color: #e0e0e0; display: flex; align-items: center; gap: 12px; border-bottom: 1px solid rgba(212, 175, 55, 0.1); }
+        .product-highlights li::before { content: '✓'; color: #25D366; font-weight: bold; font-size: 1.3em; }
+        .cta-button { width: 100%; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); color: white; padding: 18px 30px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1.1em; display: inline-flex; align-items: center; justify-content: center; gap: 10px; transition: all 0.3s ease; box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4); border: none; cursor: pointer; margin-top: 20px; }
+        .cta-button:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(37, 211, 102, 0.6); }
+        .gallery-section { max-width: 1200px; margin: 80px auto; padding: 0 2rem; }
+        .section-title { font-size: 2em; color: #d4af37; margin-bottom: 40px; text-align: center; }
+        .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 60px; }
+        .gallery-item { position: relative; border-radius: 15px; overflow: hidden; border: 1px solid rgba(212, 175, 55, 0.2); height: 280px; cursor: pointer; transition: all 0.3s ease; }
+        .gallery-item:hover { border-color: #d4af37; box-shadow: 0 10px 40px rgba(212, 175, 55, 0.3); transform: translateY(-5px); }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; }
+        .description-section { max-width: 1000px; margin: 80px auto; padding: 50px; background: rgba(255, 255, 255, 0.03); border-radius: 20px; border: 1px solid rgba(212, 175, 55, 0.2); }
+        .description-title { font-size: 1.8em; color: #d4af37; margin-bottom: 25px; }
+        .description-text { color: #e0e0e0; line-height: 1.8; font-size: 1.05em; margin-bottom: 20px; }
+        .benefits-list { margin: 30px 0; }
+        .benefits-list h4 { color: #d4af37; margin-top: 25px; margin-bottom: 15px; font-size: 1.2em; }
+        .benefits-list ul { list-style: none; margin-left: 20px; }
+        .benefits-list li { padding: 10px 0; color: #e0e0e0; display: flex; align-items: center; gap: 12px; }
+        .benefits-list li::before { content: '→'; color: #d4af37; font-weight: bold; }
+        .cta-final { max-width: 900px; margin: 80px auto; padding: 50px; text-align: center; background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(0, 0, 0, 0.3) 100%); border-radius: 20px; border: 2px solid rgba(212, 175, 55, 0.3); }
+        .cta-final h2 { font-size: 2em; color: #d4af37; margin-bottom: 20px; }
+        .cta-final p { color: #b8b8b8; font-size: 1.1em; margin-bottom: 30px; line-height: 1.6; }
+        .contact-button { display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); color: white; padding: 15px 40px; border-radius: 50px; text-decoration: none; font-weight: 600; font-size: 1em; transition: all 0.3s ease; }
+        .contact-button:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5); }
+        footer { background: #000; padding: 40px 2rem; text-align: center; border-top: 2px solid rgba(212, 175, 55, 0.3); margin-top: 100px; }
+        .footer-text { color: #b8b8b8; margin-bottom: 15px; }
+        .footer-links { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; margin-top: 20px; }
+        .footer-link { color: #d4af37; text-decoration: none; transition: all 0.3s ease; }
+        .footer-link:hover { color: #ffd700; }
+        .arabic-text { font-family: 'Amiri', serif; }
+        @media (max-width: 768px) { .product-hero { grid-template-columns: 1fr; } .product-title { font-size: 1.8em; } .description-section { padding: 30px; } .gallery-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo-text" style="text-decoration: none;">LADAIK</a>
+            <a href="https://wa.me/6281375176653?text=Saya%20ingin%20pesan%20Kurma%20Sukkari" class="header-cta" target="_blank">Pesan Sekarang</a>
+        </div>
+    </header>
+    <div class="product-hero">
+        <div class="product-image-main">
+            <img src="kurma-sukkari.jpg" alt="Kurma Sukkari" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1JTBOtabU9CXtW7yzcYQCyUYd0H8ASkv2';">
+        </div>
+        <div class="product-details">
+            <div class="breadcrumb"><a href="index.html">Home</a> / <a href="index.html#products">Produk</a> / Kurma Sukkari</div>
+            <h1 class="product-title">Kurma Sukkari</h1>
+            <p class="product-subtitle">Raja Kurma dari Al-Qassim</p>
+            <span class="product-badge">🌍 Impor</span>
+            <p class="arabic-text" style="color: #d4af37; font-size: 1.3em; margin: 15px 0;">التمر السكري</p>
+            <div class="rating">⭐⭐⭐⭐⭐ (145+ Ulasan)</div>
+            <div class="product-price">
+                <div class="price-label">Harga Spesial:</div>
+                <div class="price-value">Rp 95.000</div>
+                <div class="price-note">*Per 500gr | Tersedia berbagai ukuran</div>
+            </div>
+            <ul class="product-highlights">
+                <li>Dikenal Sebagai "Raja Kurma"</li>
+                <li>Rasa Manis Premium Seperti Gula (Sukkar)</li>
+                <li>Tekstur Lembut & Juicy</li>
+                <li>Mengandung Antioksidan Tinggi</li>
+                <li>Cocok Untuk Semua Usia</li>
+                <li>Import Langsung dari Arab Saudi</li>
+            </ul>
+            <a href="https://wa.me/6281375176653?text=Assalamualaikum,%20saya%20ingin%20order%20Kurma%20Sukkari%20sekarang" class="cta-button" target="_blank">
+                <svg width="24" height="24" viewBox="0 0 32 32" fill="white"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0z"/></svg>
+                Pesan via WhatsApp
+            </a>
+        </div>
+    </div>
+    <div class="gallery-section">
+        <h2 class="section-title">Galeri Produk</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="sukkari-1.jpg" alt="Kurma Sukkari" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1JTBOtabU9CXtW7yzcYQCyUYd0H8ASkv2';"></div>
+            <div class="gallery-item"><img src="sukkari-2.jpg" alt="Kurma Berkualitas" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1JTBOtabU9CXtW7yzcYQCyUYd0H8ASkv2';"></div>
+            <div class="gallery-item"><img src="sukkari-3.jpg" alt="Detail Kurma" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1JTBOtabU9CXtW7yzcYQCyUYd0H8ASkv2';"></div>
+        </div>
+    </div>
+    <div class="description-section">
+        <h2 class="description-title">Tentang Kurma Sukkari</h2>
+        <p class="description-text">Kurma Sukkari mendapat namanya dari kata "Sukkar" yang berarti gula dalam bahasa Arab. Kurma ini terkenal karena rasa manisnya yang luar biasa, lebih manis dan lebih lembut dibandingkan dengan jenis kurma lainnya. Ditanam di Al-Qassim, yang merupakan daerah penghasil kurma terbaik di Arab Saudi.</p>
+        <p class="description-text">Setiap butir Sukkari memiliki tekstur yang sangat lembut dan juicy, sehingga mudah dicerna dan sangat cocok untuk dikonsumsi setiap hari. Manisnya yang alami menjadikannya pilihan favorit bagi mereka yang mencari kurma premium dengan cita rasa istimewa.</p>
+        <div class="benefits-list">
+            <h4>Keunggulan Kurma Sukkari</h4>
+            <ul>
+                <li>Rasa Termanis di Antara Semua Jenis Kurma</li>
+                <li>Tekstur Sangat Lembut & Mudah Dicerna</li>
+                <li>Cocok untuk Anak-Anak Hingga Lansia</li>
+                <li>Antioksidan Tinggi untuk Kesehatan Optimal</li>
+                <li>Warna Cerah & Menarik</li>
+            </ul>
+            <h4>Manfaat Kesehatan</h4>
+            <ul>
+                <li>Meningkatkan Energi & Stamina Tubuh</li>
+                <li>Kaya Vitamin & Mineral Penting</li>
+                <li>Membantu Pencernaan & Kesehatan Usus</li>
+                <li>Menjaga Kesehatan Tulang & Gigi</li>
+                <li>Meningkatkan Daya Tahan Tubuh</li>
+            </ul>
+            <h4>Tips Penyajian</h4>
+            <ul>
+                <li>Dimakan langsung untuk nikmati rasa aslinya</li>
+                <li>Bisa diminum bersama air putih hangat</li>
+                <li>Sempurna dengan susu atau smoothie</li>
+                <li>Bagus sebagai camilan sehat sore hari</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cta-final">
+        <h2>Rasakan Kelezatan Raja Kurma Sukkari</h2>
+        <p>Kurma dengan rasa termanis & tekstur terlemah. Pesan sekarang dan nikmati kualitas premium dari Al-Qassim!</p>
+        <a href="https://wa.me/6281375176653?text=Saya%20mau%20order%20Kurma%20Sukkari%20berapa%20harga%20untuk%201kg%3F" class="contact-button" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 32 32" fill="white"><path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0z"/></svg>
+            Pesan Sekarang
+        </a>
+    </div>
+    <footer>
+        <p class="footer-text">LADAIK - Kurma Premium Impor</p>
+        <p class="footer-text">Kualitas Terbaik dari Timur Tengah</p>
+        <div class="footer-links">
+            <a href="index.html" class="footer-link">Home</a> <a href="index.html#products" class="footer-link">Produk</a> <a href="https://wa.me/6281375176653" class="footer-link" target="_blank">Kontak</a>
+            <span style="color: #666;">|</span> <a href="privacy-policy.html" class="footer-link">Privacy</a> <a href="terms-of-service.html" class="footer-link">Terms</a>
+        </div>
+        <p class="footer-text" style="margin-top: 20px; font-size: 0.9em;">© 2025 LADAIK. WhatsApp: +62 813-7517-6653</p>
+    </footer>
+</body>
+</html>
