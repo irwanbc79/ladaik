@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لديك - عسل وعود بجودة تصدير | منتجات السنة</title>
+    <meta name="description" content="عسل نقي من غابة الأكاسيا، زيت العود وخشب العود بجودة تصدير. منتجات سنة مختارة من الأستاذ يوسف للصحة والبركة للعائلات المسلمة.">
+    <meta name="keywords" content="عسل السنة، عسل نقي، عود، زيت العود، منتجات إسلامية، عسل طبيعي، خشب العود">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Amiri', serif;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            color: #ffffff;
+            overflow-x: hidden;
+            direction: rtl;
+        }
+
+        .english-text {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .arabic-text {
+            font-family: 'Amiri', serif;
+            font-size: 1.8em;
+            color: #d4af37;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            width: 65px;
+            height: 65px;
+            bottom: 30px;
+            left: 30px;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: #FFF;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 35px;
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.7);
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        header {
+            background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 100%);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-text {
+            font-size: 2em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+        }
+
+        .language-switcher {
+            display: flex;
+            gap: 5px;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 5px;
+            border-radius: 50px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .lang-btn {
+            padding: 8px 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            color: #b8b8b8;
+            font-size: 0.9em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .lang-btn:hover {
+            background: rgba(212, 175, 55, 0.2);
+            color: #d4af37;
+        }
+
+        .lang-btn.active {
+            background: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
+            color: #000;
+        }
+
+        .header-cta {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .header-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
+        }
+
+        .hero {
+            padding: 80px 2rem;
+            text-align: center;
+            background: radial-gradient(circle at center, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: moveGrid 20s linear infinite;
+        }
+
+        @keyframes moveGrid {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .bismillah {
+            font-family: 'Amiri', serif;
+            font-size: 2.5em;
+            color: #d4af37;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffffff 0%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            line-height: 1.6;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5em;
+            color: #b8b8b8;
+            margin-bottom: 30px;
+            font-weight: 400;
+            line-height: 1.8;
+        }
+
+        .ustadz-profile {
+            display: inline-block;
+            margin: 30px 0;
+            padding: 20px 40px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 20px;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .ustadz-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #d4af37;
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
+            margin-bottom: 15px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .ustadz-name {
+            font-size: 1.8em;
+            font-weight: 700;
+            color: #d4af37;
+            margin-bottom: 5px;
+        }
+
+        .ustadz-title {
+            color: #b8b8b8;
+            font-size: 1.2em;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            padding: 18px 45px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4);
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.6);
+        }
+
+        .btn-secondary {
+            background: rgba(212, 175, 55, 0.2);
+            color: #d4af37;
+            padding: 18px 45px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            border: 2px solid #d4af37;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(212, 175, 55, 0.3);
+            transform: translateY(-3px);
+        }
+
+        .products {
+            padding: 80px 2rem;
+            background: linear-gradient(180deg, #0a0a0a 0%, #1a1a1a 100%);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffffff 0%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #b8b8b8;
+            font-size: 1.4em;
+            margin-bottom: 60px;
+        }
+
+        .product-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .product-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 20px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            position: relative;
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, rgba(212, 175, 55, 0.2) 0%, transparent 70%);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(212, 175, 55, 0.3);
+            border-color: #d4af37;
+        }
+
+        .product-card:hover::before {
+            opacity: 1;
+        }
+
+        .product-image-container {
+            position: relative;
+            padding: 40px;
+            background: radial-gradient(circle at center, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px;
+        }
+
+        .glow-effect {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.4) 0%, transparent 70%);
+            border-radius: 50%;
+            filter: blur(40px);
+            animation: glow 3s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { transform: scale(1); opacity: 0.5; }
+            50% { transform: scale(1.2); opacity: 0.8; }
+        }
+
+        .product-image {
+            width: 100%;
+            max-width: 250px;
+            height: 280px;
+            position: relative;
+            z-index: 1;
+            filter: drop-shadow(0 10px 30px rgba(212, 175, 55, 0.3));
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: linear-gradient(135deg, #d4af37 0%, #ffd700 100%);
+            color: #000;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1em;
+            z-index: 2;
+            box-shadow: 0 5px 20px rgba(212, 175, 55, 0.5);
+        }
+
+        .product-info {
+            padding: 30px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .product-title {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #d4af37;
+            font-weight: 700;
+        }
+
+        .product-subtitle {
+            color: #b8b8b8;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .product-features {
+            list-style: none;
+            margin-bottom: 25px;
+        }
+
+        .product-features li {
+            padding: 10px 0;
+            color: #e0e0e0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1em;
+        }
+
+        .product-features li::before {
+            content: '✓';
+            color: #d4af37;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+
+        .price-container {
+            margin: 25px 0;
+            padding: 20px;
+            background: rgba(212, 175, 55, 0.1);
+            border-radius: 15px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .price-label {
+            color: #b8b8b8;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .price {
+            font-size: 2.2em;
+            color: #d4af37;
+            font-weight: 700;
+        }
+
+        .price-note {
+            color: #b8b8b8;
+            font-size: 1em;
+            margin-top: 5px;
+        }
+
+        .product-cta {
+            width: 100%;
+            background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2em;
+            display: inline-block;
+            text-align: center;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .product-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
+        }
+
+        .benefits {
+            padding: 80px 2rem;
+            background: radial-gradient(circle at center, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+        }
+
+        .benefits-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .benefit-card {
+            background: rgba(255, 255, 255, 0.03);
+            padding: 40px 30px;
+            border-radius: 20px;
+            text-align: center;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            border-color: #d4af37;
+            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.2);
+        }
+
+        .benefit-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .benefit-title {
+            font-size: 1.5em;
+            color: #d4af37;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .benefit-text {
+            color: #b8b8b8;
+            line-height: 2;
+            font-size: 1.1em;
+        }
+
+        .dalil {
+            padding: 80px 2rem;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%);
+        }
+
+        .dalil-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 50px;
+            border-radius: 20px;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            text-align: center;
+        }
+
+        .quran-icon {
+            font-size: 4em;
+            color: #d4af37;
+            margin-bottom: 30px;
+        }
+
+        .dalil-arabic {
+            font-family: 'Amiri', serif;
+            font-size: 2.3em;
+            color: #d4af37;
+            line-height: 2.2;
+            margin-bottom: 30px;
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+
+        .dalil-translation {
+            font-size: 1.4em;
+            color: #e0e0e0;
+            font-style: italic;
+            margin-bottom: 20px;
+            line-height: 2;
+        }
+
+        .dalil-source {
+            color: #b8b8b8;
+            font-size: 1.2em;
+        }
+
+        .cta-section {
+            padding: 80px 2rem;
+            text-align: center;
+            background: radial-gradient(circle at center, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+        }
+
+        .cta-box {
+            max-width: 800px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.03);
+            padding: 60px 40px;
+            border-radius: 30px;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .cta-title {
+            font-size: 2.8em;
+            margin-bottom: 20px;
+            color: #d4af37;
+        }
+
+        .cta-text {
+            font-size: 1.4em;
+            color: #b8b8b8;
+            margin-bottom: 40px;
+            line-height: 2;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin: 30px 0;
+            font-size: 1.5em;
+            color: #d4af37;
+            direction: ltr;
+        }
+
+        footer {
+            background: #000;
+            padding: 40px 2rem;
+            text-align: center;
+            border-top: 2px solid rgba(212, 175, 55, 0.3);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-text {
+            color: #b8b8b8;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .footer-link {
+            color: #d4af37;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 1.1em;
+        }
+
+        .footer-link:hover {
+            color: #ffd700;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2em; }
+            .section-title { font-size: 2.2em; }
+            .product-grid { grid-template-columns: 1fr; }
+            .cta-buttons { flex-direction: column; }
+            .header-content { flex-direction: column; gap: 15px; text-align: center; }
+            .language-switcher { order: -1; }
+            .dalil-container { padding: 30px 20px; }
+            .dalil-arabic { font-size: 1.8em; }
+            .whatsapp-float { width: 55px; height: 55px; font-size: 28px; }
+        }
+    </style>
+</head>
+<body>
+    <a href="https://wa.me/6281375176653?text=السلام%20عليكم%20أستاذ،%20أريد%20أن%20أسأل%20عن%20منتجات%20لديك" class="whatsapp-float" target="_blank">
+        <svg width="35" height="35" viewBox="0 0 32 32" fill="white">
+            <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z"/>
+        </svg>
+    </a>
+
+    <header>
+        <div class="header-content">
+            <div style="display: flex; align-items: center; gap: 20px;">
+                <a href="https://wa.me/6281375176653?text=السلام%20عليكم%20أستاذ،%20أريد%20أن%20أطلب%20منتجات%20لديك" class="header-cta" target="_blank">
+                    اطلب الآن
+                </a>
+                <div class="language-switcher">
+                    <a href="index-ar.html" class="lang-btn active">🇸🇦 AR</a>
+                    <a href="index-en.html" class="lang-btn">🇬🇧 EN</a>
+                    <a href="index.html" class="lang-btn">🇮🇩 ID</a>
+                </div>
+            </div>
+            <div class="logo-container">
+                <span class="logo-text">لديك</span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+            <h1>عسل وعود بجودة تصدير<br>أصلي من إندونيسيا<br>منتجات سنة مباركة</h1>/h1>
+            <p class="hero-subtitle">الخيار الأفضل للعائلات المسلمة للصحة والقوة والمناعة</p>
+            
+            <div class="ustadz-profile">
+                <img src="ustadz-yusuf.jpg" alt="الأستاذ يوسف" class="ustadz-photo" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1FFR6yGBYu80zAMlipTZGJ5ZNyyYCsZ9u';">
+                <div class="ustadz-name">الأستاذ يوسف</div>
+                <div class="ustadz-title">الموزع الرسمي لديك</div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="https://wa.me/6281375176653?text=السلام%20عليكم%20أستاذ،%20أريد%20أن%20أسأل%20عن%20منتجات%20لديك" class="btn-primary" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 32 32" fill="white">
+                        <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z"/>
+                    </svg>
+                    تواصل مع الأستاذ يوسف
+                </a>
+                <a href="#products" class="btn-secondary">عرض المنتجات</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h2 class="section-title">منتجاتنا المختارة</h2>
+        <p class="section-subtitle">جودة مضمونة • حلال وطيب • مختار بعناية</p>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="glow-effect"></div>
+                    <img src="madu-ladaik.jpg" alt="عسل لديك" class="product-image" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1JTBOtabU9CXtW7yzcYQCyUYd0H8ASkv2';">
+                    <span class="product-badge">الأكثر مبيعاً</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">عسل لديك</h3>
+                    <p class="product-subtitle english-text">Acasia Forest Farm - 100% Nectar Raw Honey</p>
+                    <p class="arabic-text" style="font-size: 1.5em; margin: 15px 0;">لديك</p>
+                    
+                    <ul class="product-features">
+                        <li>عسل طبيعي نقي 100%</li>
+                        <li>يُحصد في الوقت المناسب</li>
+                        <li>فوائد طبيعية كاملة</li>
+                        <li>للشفاء والصحة</li>
+                        <li>يعزز القوة والمناعة</li>
+                        <li>أفضل شراب في العالم (حديث)</li>
+                    </ul>
+
+                    <div class="price-container">
+                        <div class="price-label">السعر الخاص:</div>
+                        <div class="price">45,000 روبية</div>
+                        <div class="price-note">*السعر للزجاجة الواحدة | أحجام متعددة متاحة</div>
+                    </div>
+
+                    <a href="https://wa.me/6281375176653?text=السلام%20عليكم%20أستاذ،%20أريد%20أن%20أطلب%20عسل%20لديك" class="product-cta" target="_blank">
+                        اطلب العسل الآن
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="glow-effect"></div>
+                    <img src="minyak-gaharu.jpg" alt="زيت العود" class="product-image" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1luNHfGNlHABhE1PbhXFKhFEdpzu2bVf_';">
+                    <span class="product-badge">فاخر</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">زيت العود</h3>
+                    <p class="product-subtitle english-text">Agarwood Oil - Export Quality</p>
+                    
+                    <ul class="product-features">
+                        <li>عطر فاخر وراقي</li>
+                        <li>علاج عطري طبيعي</li>
+                        <li>محبوب من النبي ﷺ</li>
+                        <li>للأغراض الروحية</li>
+                        <li>طويل الأمد واقتصادي</li>
+                        <li>مثالي للهدايا الخاصة</li>
+                    </ul>
+
+                    <div class="price-container">
+                        <div class="price-label">السعر:</div>
+                        <div class="price">اتصل بنا</div>
+                        <div class="price-note">*درجات وأحجام مختلفة متاحة</div>
+                    </div>
+
+                    <a href="https://wa.me/6281375176653?text=السلام%20عليكم%20أستاذ،%20أريد%20أن%20أسأل%20عن%20سعر%20زيت%20العود" class="product-cta" target="_blank">
+                        استفسر عن السعر والأنواع
+                    </a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="glow-effect"></div>
+                    <img src="kayu-gaharu.jpg" alt="خشب العود" class="product-image" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1luNHfGNlHABhE1PbhXFKhFEdpzu2bVf_';">
+                    <span class="product-badge">حصري</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">خشب العود</h3>
+                    <p class="product-subtitle english-text">Agarwood - Export Grade Quality</p>
+                    
+                    <ul class="product-features">
+                        <li>خشب عود مختار فاخر</li>
+                        <li>للبخور الفاخر</li>
+                        <li>رائحة مميزة ومهدئة</li>
+                        <li>قيمة استثمارية عالية</li>
+                        <li>مجموعة حصرية</li>
+                        <li>شهادة أصالة</li>
+                    </ul>
+
+                    <div class="price-container">
+                        <div class="price-label">السعر:</div>
+                        <div class="price">اتصل بنا</div>
+                        <div class="price-note">*السعر حسب الدرجة والوزن</div>
+                    </div>
+
+                    <a href="https://wa.me/6281375176653?text=السلام%20عليكم%20أستاذ،%20أريد%20أن%20أسأل%20عن%20خشب%20العود" class="product-cta" target="_blank">
+                        استشارة المنتج
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="benefits">
+        <h2 class="section-title">لماذا تختار لديك؟</h2>
+        <p class="section-subtitle">التزامنا بالجودة والبركة</p>
+        
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">✓</div>
+                <h3 class="benefit-title">أصلي وحلال 100%</h3>
+                <p class="benefit-text">منتجات مضمونة الأصالة، حلال وطيب. لا خلط ولا مواد كيميائية ضارة.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">🕌</div>
+                <h3 class="benefit-title">وفق السنة</h3>
+                <p class="benefit-text">العسل والعود منتجات مذكورة في القرآن ومحبوبة من النبي ﷺ.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">🌟</div>
+                <h3 class="benefit-title">جودة تصدير</h3>
+                <p class="benefit-text">معايير جودة دولية، مختارة بعناية من الخبراء لك.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">🤝</div>
+                <h3 class="benefit-title">موثوق من المسلمين</h3>
+                <p class="benefit-text">موثوق من آلاف العائلات المسلمة الإندونيسية والجماعات من مناطق مختلفة.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">💼</div>
+                <h3 class="benefit-title">سعر معقول</h3>
+                <p class="benefit-text">جودة فاخرة بأسعار مناسبة لجميع مستويات المجتمع المسلم.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="benefit-icon">🎁</div>
+                <h3 class="benefit-title">مثالي للهدايا</h3>
+                <p class="benefit-text">باقات إسلامية مباركة، مثالية للهدايا الخاصة للعائلة والأقارب.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="dalil">
+        <div class="dalil-container">
+            <div class="quran-icon">📖</div>
+            <h2 class="section-title">دليل من القرآن</h2>
+            
+            <p class="dalil-arabic">
+                ثُمَّ كُلِي مِن كُلِّ ٱلثَّمَرَٰتِ فَٱسْلُكِي سُبُلَ رَبِّكِ ذُلُلًا ۚ يَخْرُجُ مِن بُطُونِهَا شَرَابٌ مُّخْتَلِفٌ أَلْوَٰنُهُۥ فِيهِ شِفَآءٌ لِّلنَّاسِ
+            </p>
+            
+            <p class="dalil-translation">
+                "ثم كلي من كل الثمرات فاسلكي سبل ربك ذللا يخرج من بطونها شراب مختلف ألوانه فيه شفاء للناس..."
+            </p>
+            
+            <p class="dalil-source">
+                (سورة النحل: 69)
+            </p>
+
+            <div style="margin-top: 40px; padding-top: 30px; border-top: 2px solid rgba(212, 175, 55, 0.3);">
+                <p class="dalil-translation" style="font-size: 1.3em; margin-bottom: 10px;">
+                    "إن في العسل شفاء للناس"
+                </p>
+                <p class="dalil-source">
+                    (رواه البخاري)
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-box">
+            <h2 class="cta-title">هل أنت مستعد للحصول على منتجات مباركة؟</h2>
+            <p class="cta-text">
+                لا تؤخر إعطاء الأفضل لعائلتك. 
+                اتصل بالأستاذ يوسف الآن للاستشارة والطلبات.
+            </p>
+            
+            <div class="contact-info">
+                <svg width="30" height="30" viewBox="0 0 32 32" fill="#d4af37">
+                    <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z"/>
+                </svg>
+                <span>+62 813-7517-6653</span>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="https://wa.me/6281375176653?text=السلام%20عليكم%20أستاذ،%20أريد%20أن%20أسأل%20عن%20منتجات%20لديك" class="btn-primary" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 32 32" fill="white">
+                        <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z"/>
+                    </svg>
+                    دردشة عبر واتساب
+                </a>
+            </div>
+
+            <p style="margin-top: 30px; color: #b8b8b8; font-size: 1.1em;">
+                <strong>ساعات العمل:</strong> كل يوم | 08:00 - 21:00 WIB<br>
+                <em>استجابة سريعة • استشارة مجانية • التوصيل في جميع أنحاء إندونيسيا</em>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3 class="logo-text" style="margin-bottom: 20px;">لديك</h3>
+            <p class="arabic-text" style="font-size: 1.8em; margin-bottom: 20px;">لديك</p>
+            <p class="footer-text">
+                منتجات سنة عالية الجودة للصحة والبركة للعائلات المسلمة
+            </p>
+            
+            <div class="footer-links">
+                <a href="terms-of-service.html" class="footer-link english-text">Terms of Service</a>
+                <a href="disclaimer.html" class="footer-link english-text">Disclaimer</a>
+                <a href="privacy-policy.html" class="footer-link english-text">Privacy Policy</a>
+                <a href="sitemap.html" class="footer-link english-text">Sitemap</a>
+                <span style="color: #666;">|</span>
+                <a href="https://wa.me/6281375176653?text=أريد%20أن%20أصبح%20موزعا" class="footer-link" target="_blank">موزع</a>
+                <a href="https://wa.me/6281375176653" class="footer-link" target="_blank">اتصل</a>
+                <a href="#products" class="footer-link">منتجات</a>
+            </div>
+
+            <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(212, 175, 55, 0.2);">
+                <p class="footer-text" style="font-size: 1em;">
+                    © 2025 لديك. جميع الحقوق محفوظة.<br>
+                    <span class="english-text">Official Distributor: Ustadz Yusuf | WhatsApp: +62 813-7517-6653</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.product-card, .benefit-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'all 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
