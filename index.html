@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LADAIK - Madu & Gaharu Kualitas Ekspor | Asli dari Indonesia | Produk Sunnah Berkah</title>
-    <meta name="description" content="Madu murni Acasia Forest Farm, Minyak Gaharu & Kayu Gaharu kualitas ekspor. Produk sunnah pilihan Ustadz Yusuf untuk kesehatan dan keberkahan keluarga Muslim.">
-    <meta name="keywords" content="madu sunnah, madu asli, gaharu, minyak gaharu, kayu gaharu, produk islami, madu murni, raw honey, agarwood, oud oil">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <title>LADAIK - Madu Murni, Gaharu Premium & Kurma Impor | Produk Sunnah Berkah</title>
+    <meta name="description"
+        content="Madu murni Acasia Forest Farm, Minyak Gaharu & Kayu Gaharu kualitas ekspor, serta Kurma Premium Impor (Ajwa, Sukkari, Deglet Noor). Produk sunnah pilihan Ustadz Yusuf untuk kesehatan dan keberkahan keluarga Muslim.">
+    <meta name="keywords"
+        content="madu sunnah, madu asli, gaharu, minyak gaharu, kayu gaharu, kurma ajwa, kurma sukkari, kurma deglet noor, kurma impor, produk islami, madu murni, raw honey, agarwood, oud oil">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Amiri:wght@400;700&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -55,13 +60,20 @@
         }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
         }
 
         /* Header Section */
         header {
-            background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 100%);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 100%);
             padding: 1rem 2rem;
             position: sticky;
             top: 0;
@@ -162,8 +174,13 @@
         }
 
         @keyframes moveGrid {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(50px, 50px); }
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(50px, 50px);
+            }
         }
 
         .hero-content {
@@ -357,8 +374,17 @@
         }
 
         @keyframes glow {
-            0%, 100% { transform: scale(1); opacity: 0.5; }
-            50% { transform: scale(1.2); opacity: 0.8; }
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 0.8;
+            }
         }
 
         .product-image {
@@ -635,30 +661,152 @@
             color: #ffd700;
         }
 
+        /* Category Badges */
+        .hero-categories {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .category-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            border-radius: 50px;
+            color: #d4af37;
+            font-size: 1em;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: badgeFadeIn 0.6s ease forwards;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .category-badge:hover {
+            background: rgba(212, 175, 55, 0.25);
+            border-color: #d4af37;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+        }
+
+        .category-badge:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .category-badge:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .category-badge:nth-child(3) {
+            animation-delay: 0.8s;
+        }
+
+        .category-badge .badge-icon {
+            font-size: 1.3em;
+        }
+
+        .category-badge .badge-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #d4af37;
+            animation: dotPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes badgeFadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes dotPulse {
+
+            0%,
+            100% {
+                opacity: 0.4;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.5);
+            }
+        }
+
         /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2em; }
-            .section-title { font-size: 2em; }
-            .product-grid { grid-template-columns: 1fr; }
-            .cta-buttons { flex-direction: column; }
-            .header-content { flex-direction: column; gap: 15px; text-align: center; }
-            .language-switcher { order: -1; }
-            .dalil-container { padding: 30px 20px; }
-            .dalil-arabic { font-size: 1.5em; }
-            .whatsapp-float { width: 55px; height: 55px; font-size: 28px; }
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .section-title {
+                font-size: 2em;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .language-switcher {
+                order: -1;
+            }
+
+            .dalil-container {
+                padding: 30px 20px;
+            }
+
+            .dalil-arabic {
+                font-size: 1.5em;
+            }
+
+            .whatsapp-float {
+                width: 55px;
+                height: 55px;
+                font-size: 28px;
+            }
+
+            .hero-categories {
+                gap: 10px;
+            }
+
+            .category-badge {
+                padding: 10px 18px;
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
+
 <body>
     <!-- Floating WhatsApp -->
-    <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20bertanya%20tentang%20produk%20LADAIK" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20bertanya%20tentang%20produk%20LADAIK"
+        class="whatsapp-float" target="_blank">
         <svg width="35" height="35" viewBox="0 0 32 32" fill="white">
-            <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z"/>
+            <path
+                d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z" />
         </svg>
     </a>
 
     <!-- Header -->
-            <header>
+    <header>
         <div class="header-content">
             <div class="logo-container">
                 <span class="logo-text">LADAIK</span>
@@ -669,7 +817,8 @@
                     <a href="index-en.html" class="lang-btn">🇬🇧 EN</a>
                     <a href="index-ar.html" class="lang-btn">🇸🇦 AR</a>
                 </div>
-                <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20order%20produk%20LADAIK" class="header-cta" target="_blank">
+                <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20order%20produk%20LADAIK"
+                    class="header-cta" target="_blank">
                     Pesan Sekarang
                 </a>
             </div>
@@ -680,19 +829,41 @@
     <section class="hero">
         <div class="hero-content">
             <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
-            <h1>Madu & Gaharu Berkualitas Ekspor<br>Asli dari Indonesia<br>Produk Sunnah Penuh Berkah</h1>
-            <p class="hero-subtitle">Pilihan Terbaik Keluarga Muslim untuk Kesehatan, Stamina & Imunitas</p>
-            
+            <h1>Madu Murni · Gaharu Premium · Kurma Impor<br>Produk Sunnah Berkualitas dari Indonesia & Timur Tengah
+            </h1>
+            <p class="hero-subtitle">Pilihan Terbaik Keluarga Muslim untuk Kesehatan, Stamina & Keberkahan</p>
+
+            <div class="hero-categories">
+                <a href="#products" class="category-badge">
+                    <span class="badge-icon">🍯</span>
+                    <span>Madu Asli</span>
+                    <span class="badge-dot"></span>
+                </a>
+                <a href="#products" class="category-badge">
+                    <span class="badge-icon">🪵</span>
+                    <span>Gaharu Ekspor</span>
+                    <span class="badge-dot"></span>
+                </a>
+                <a href="#kurma-impor" class="category-badge">
+                    <span class="badge-icon">🌴</span>
+                    <span>Kurma Impor</span>
+                    <span class="badge-dot"></span>
+                </a>
+            </div>
+
             <div class="ustadz-profile">
-                <img src="ustadz-yusuf.jpg" alt="Ustadz Yusuf" class="ustadz-photo" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1FFR6yGBYu80zAMlipTZGJ5ZNyyYCsZ9u';">
+                <img src="ustadz-yusuf.jpg" alt="Ustadz Yusuf" class="ustadz-photo"
+                    onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1FFR6yGBYu80zAMlipTZGJ5ZNyyYCsZ9u';">
                 <div class="ustadz-name">Ustadz Yusuf</div>
                 <div class="ustadz-title">Distributor Resmi LADAIK</div>
             </div>
 
             <div class="cta-buttons">
-                <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20bertanya%20tentang%20produk%20LADAIK" class="btn-primary" target="_blank">
+                <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20bertanya%20tentang%20produk%20LADAIK"
+                    class="btn-primary" target="_blank">
                     <svg width="24" height="24" viewBox="0 0 32 32" fill="white">
-                        <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z"/>
+                        <path
+                            d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z" />
                     </svg>
                     Hubungi Ustadz Yusuf
                 </a>
@@ -705,20 +876,21 @@
     <section id="products" class="products">
         <h2 class="section-title">Produk Pilihan Kami</h2>
         <p class="section-subtitle">Kualitas Terjamin • Halal & Thayyib • Dipilih dengan Teliti</p>
-        
+
         <div class="product-grid">
             <!-- Product 1: Madu -->
             <div class="product-card">
                 <div class="product-image-container">
                     <div class="glow-effect"></div>
-                    <img src="madu-ladaik.jpg" alt="Madu LADAIK" class="product-image" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1JTBOtabU9CXtW7yzcYQCyUYd0H8ASkv2';">
+                    <img src="madu-ladaik.jpg" alt="Madu LADAIK" class="product-image"
+                        onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1JTBOtabU9CXtW7yzcYQCyUYd0H8ASkv2';">
                     <span class="product-badge">Best Seller</span>
                 </div>
                 <div class="product-info">
                     <h3 class="product-title">Madu LADAIK</h3>
                     <p class="product-subtitle">Acasia Forest Farm - 100% Nectar Raw Honey</p>
                     <p class="arabic-text" style="font-size: 1.2em; margin: 15px 0;">لديك</p>
-                    
+
                     <ul class="product-features">
                         <li>100% Madu Murni Asli</li>
                         <li>Dipanen pada waktu yang tepat</li>
@@ -734,7 +906,8 @@
                         <div class="price-note">*Harga per botol | Tersedia berbagai ukuran</div>
                     </div>
 
-                    <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20order%20Madu%20LADAIK" class="product-cta" target="_blank">
+                    <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20order%20Madu%20LADAIK"
+                        class="product-cta" target="_blank">
                         Pesan Madu Sekarang
                     </a>
                 </div>
@@ -744,13 +917,14 @@
             <div class="product-card">
                 <div class="product-image-container">
                     <div class="glow-effect"></div>
-                    <img src="minyak-gaharu.jpg" alt="Minyak Gaharu" class="product-image" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1luNHfGNlHABhE1PbhXFKhFEdpzu2bVf_';">
+                    <img src="minyak-gaharu.jpg" alt="Minyak Gaharu" class="product-image"
+                        onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1luNHfGNlHABhE1PbhXFKhFEdpzu2bVf_';">
                     <span class="product-badge">Premium</span>
                 </div>
                 <div class="product-info">
                     <h3 class="product-title">Minyak Gaharu</h3>
                     <p class="product-subtitle">Agarwood Oil - Kualitas Ekspor</p>
-                    
+
                     <ul class="product-features">
                         <li>Wewangian Mewah & Berkelas</li>
                         <li>Aromaterapi Alami</li>
@@ -766,7 +940,8 @@
                         <div class="price-note">*Berbagai grade & ukuran tersedia</div>
                     </div>
 
-                    <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20tanya%20harga%20Minyak%20Gaharu" class="product-cta" target="_blank">
+                    <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20tanya%20harga%20Minyak%20Gaharu"
+                        class="product-cta" target="_blank">
                         Tanya Harga & Varian
                     </a>
                 </div>
@@ -776,13 +951,14 @@
             <div class="product-card">
                 <div class="product-image-container">
                     <div class="glow-effect"></div>
-                    <img src="kayu-gaharu.jpg" alt="Kayu Gaharu" class="product-image" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1luNHfGNlHABhE1PbhXFKhFEdpzu2bVf_';">
+                    <img src="kayu-gaharu.jpg" alt="Kayu Gaharu" class="product-image"
+                        onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1luNHfGNlHABhE1PbhXFKhFEdpzu2bVf_';">
                     <span class="product-badge">Eksklusif</span>
                 </div>
                 <div class="product-info">
                     <h3 class="product-title">Kayu Gaharu</h3>
                     <p class="product-subtitle">Agarwood - Grade Export Quality</p>
-                    
+
                     <ul class="product-features">
                         <li>Kayu Gaharu Pilihan</li>
                         <li>Untuk Bukhur/Dupa Premium</li>
@@ -798,7 +974,8 @@
                         <div class="price-note">*Harga sesuai grade & berat kayu</div>
                     </div>
 
-                    <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20tanya%20tentang%20Kayu%20Gaharu" class="product-cta" target="_blank">
+                    <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20tanya%20tentang%20Kayu%20Gaharu"
+                        class="product-cta" target="_blank">
                         Konsultasi Produk
                     </a>
                 </div>
@@ -806,8 +983,10 @@
         </div>
 
         <!-- Kurma Premium Impor -->
-        <div style="max-width: 1200px; margin: 60px auto 0; padding: 0 2rem; border-top: 2px solid rgba(212, 175, 55, 0.2); padding-top: 60px;">
-            <h3 style="text-align: center; color: #d4af37; font-size: 1.5em; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+        <div id="kurma-impor"
+            style="max-width: 1200px; margin: 60px auto 0; padding: 0 2rem; border-top: 2px solid rgba(212, 175, 55, 0.2); padding-top: 60px;">
+            <h3
+                style="text-align: center; color: #d4af37; font-size: 1.5em; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; gap: 10px;">
                 <span style="font-size: 1.3em;">🌍</span> Kurma Premium Impor
             </h3>
             <p style="text-align: center; color: #b8b8b8; margin-bottom: 30px;">Pilihan terbaik dari Timur Tengah</p>
@@ -818,14 +997,17 @@
             <div class="product-card">
                 <div class="product-image-container">
                     <div class="glow-effect"></div>
-                    <img src="kurma-ajwa.jpg" alt="Kurma Ajwa Madinah" class="product-image" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1JTBOtabU9CXtW7yzcYQCyUYd0H8ASkv2';">
-                    <span class="product-badge" style="background: linear-gradient(135deg, #1e90ff 0%, #00bfff 100%); color: white;">🌍 Impor</span>
+                    <img src="kurma-ajwa.jpg?v=2" alt="Kurma Ajwa Madinah" class="product-image"
+                        onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1JTBOtabU9CXtW7yzcYQCyUYd0H8ASkv2';">
+                    <span class="product-badge"
+                        style="background: linear-gradient(135deg, #1e90ff 0%, #00bfff 100%); color: white;">🌍
+                        Impor</span>
                 </div>
                 <div class="product-info">
                     <h3 class="product-title">Kurma Ajwa Madinah</h3>
                     <p class="product-subtitle">Premium Import dari Arab Saudi</p>
                     <p class="arabic-text" style="font-size: 1.2em; margin: 15px 0;">التمر العجوة</p>
-                    
+
                     <ul class="product-features">
                         <li>Asli dari Madinah Al-Munawwarah</li>
                         <li>Rasa manis & tekstur lembut</li>
@@ -836,16 +1018,18 @@
                     </ul>
 
                     <div class="price-container">
-                        <div class="price-label">Harga Spesial:</div>
-                        <div class="price">Rp 85.000</div>
-                        <div class="price-note">*Harga per 500gr | Tersedia berbagai ukuran</div>
+                        <div class="price-label">Harga:</div>
+                        <div class="price">Chat untuk Harga Terbaru</div>
+                        <div class="price-note">*Harga dapat berubah sewaktu-waktu</div>
                     </div>
 
                     <div style="display: flex; gap: 10px; flex-direction: column;">
-                        <a href="product-kurma-ajwa.html" class="product-cta" style="background: rgba(212, 175, 55, 0.2); border: 2px solid #d4af37; color: #d4af37;">
+                        <a href="product-kurma-ajwa.html" class="product-cta"
+                            style="background: rgba(212, 175, 55, 0.2); border: 2px solid #d4af37; color: #d4af37;">
                             Lihat Detail Produk
                         </a>
-                        <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20order%20Kurma%20Ajwa%20Madinah" class="product-cta" target="_blank">
+                        <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20order%20Kurma%20Ajwa%20Madinah"
+                            class="product-cta" target="_blank">
                             Pesan Kurma Ajwa
                         </a>
                     </div>
@@ -856,14 +1040,17 @@
             <div class="product-card">
                 <div class="product-image-container">
                     <div class="glow-effect"></div>
-                    <img src="kurma-sukkari.jpg" alt="Kurma Sukkari" class="product-image" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1JTBOtabU9CXtW7yzcYQCyUYd0H8ASkv2';">
-                    <span class="product-badge" style="background: linear-gradient(135deg, #1e90ff 0%, #00bfff 100%); color: white;">🌍 Impor</span>
+                    <img src="kurma-sukkari.jpg?v=2" alt="Kurma Sukkari" class="product-image"
+                        onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1JTBOtabU9CXtW7yzcYQCyUYd0H8ASkv2';">
+                    <span class="product-badge"
+                        style="background: linear-gradient(135deg, #1e90ff 0%, #00bfff 100%); color: white;">🌍
+                        Impor</span>
                 </div>
                 <div class="product-info">
                     <h3 class="product-title">Kurma Sukkari</h3>
                     <p class="product-subtitle">Premium Quality dari Al-Qassim</p>
                     <p class="arabic-text" style="font-size: 1.2em; margin: 15px 0;">التمر السكري</p>
-                    
+
                     <ul class="product-features">
                         <li>Dikenal sebagai "Raja Kurma"</li>
                         <li>Rasa manis premium seperti gula</li>
@@ -874,16 +1061,18 @@
                     </ul>
 
                     <div class="price-container">
-                        <div class="price-label">Harga Spesial:</div>
-                        <div class="price">Rp 95.000</div>
-                        <div class="price-note">*Harga per 500gr | Tersedia berbagai ukuran</div>
+                        <div class="price-label">Harga:</div>
+                        <div class="price">Chat untuk Harga Terbaru</div>
+                        <div class="price-note">*Harga dapat berubah sewaktu-waktu</div>
                     </div>
 
                     <div style="display: flex; gap: 10px; flex-direction: column;">
-                        <a href="product-kurma-sukkari.html" class="product-cta" style="background: rgba(212, 175, 55, 0.2); border: 2px solid #d4af37; color: #d4af37;">
+                        <a href="product-kurma-sukkari.html" class="product-cta"
+                            style="background: rgba(212, 175, 55, 0.2); border: 2px solid #d4af37; color: #d4af37;">
                             Lihat Detail Produk
                         </a>
-                        <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20order%20Kurma%20Sukkari" class="product-cta" target="_blank">
+                        <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20order%20Kurma%20Sukkari"
+                            class="product-cta" target="_blank">
                             Pesan Kurma Sukkari
                         </a>
                     </div>
@@ -894,14 +1083,17 @@
             <div class="product-card">
                 <div class="product-image-container">
                     <div class="glow-effect"></div>
-                    <img src="kurma-deglet-noor.jpg" alt="Kurma Deglet Noor" class="product-image" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1JTBOtabU9CXtW7yzcYQCyUYd0H8ASkv2';">
-                    <span class="product-badge" style="background: linear-gradient(135deg, #1e90ff 0%, #00bfff 100%); color: white;">🌍 Impor</span>
+                    <img src="kurma-deglet-noor.jpg?v=2" alt="Kurma Deglet Noor" class="product-image"
+                        onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1JTBOtabU9CXtW7yzcYQCyUYd0H8ASkv2';">
+                    <span class="product-badge"
+                        style="background: linear-gradient(135deg, #1e90ff 0%, #00bfff 100%); color: white;">🌍
+                        Impor</span>
                 </div>
                 <div class="product-info">
                     <h3 class="product-title">Kurma Deglet Noor</h3>
                     <p class="product-subtitle">Premium Import dari Tunisia</p>
                     <p class="arabic-text" style="font-size: 1.2em; margin: 15px 0;">تمر دقلة النور</p>
-                    
+
                     <ul class="product-features">
                         <li>Kurma terkenal kualitas dunia</li>
                         <li>Warna cokelat transparan natural</li>
@@ -912,16 +1104,18 @@
                     </ul>
 
                     <div class="price-container">
-                        <div class="price-label">Harga Spesial:</div>
-                        <div class="price">Rp 75.000</div>
-                        <div class="price-note">*Harga per 500gr | Tersedia berbagai ukuran</div>
+                        <div class="price-label">Harga:</div>
+                        <div class="price">Chat untuk Harga Terbaru</div>
+                        <div class="price-note">*Harga dapat berubah sewaktu-waktu</div>
                     </div>
 
                     <div style="display: flex; gap: 10px; flex-direction: column;">
-                        <a href="product-kurma-deglet-noor.html" class="product-cta" style="background: rgba(212, 175, 55, 0.2); border: 2px solid #d4af37; color: #d4af37;">
+                        <a href="product-kurma-deglet-noor.html" class="product-cta"
+                            style="background: rgba(212, 175, 55, 0.2); border: 2px solid #d4af37; color: #d4af37;">
                             Lihat Detail Produk
                         </a>
-                        <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20order%20Kurma%20Deglet%20Noor" class="product-cta" target="_blank">
+                        <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20order%20Kurma%20Deglet%20Noor"
+                            class="product-cta" target="_blank">
                             Pesan Kurma Deglet Noor
                         </a>
                     </div>
@@ -934,30 +1128,34 @@
     <section class="benefits">
         <h2 class="section-title">Mengapa Memilih LADAIK?</h2>
         <p class="section-subtitle">Komitmen Kami untuk Kualitas & Keberkahan</p>
-        
+
         <div class="benefits-grid">
             <div class="benefit-card">
                 <div class="benefit-icon">✓</div>
                 <h3 class="benefit-title">100% Asli & Halal</h3>
-                <p class="benefit-text">Produk terjamin keasliannya, halal, dan thayyib. Tidak ada campuran atau bahan kimia berbahaya.</p>
+                <p class="benefit-text">Produk terjamin keasliannya, halal, dan thayyib. Tidak ada campuran atau bahan
+                    kimia berbahaya.</p>
             </div>
 
             <div class="benefit-card">
                 <div class="benefit-icon">🕌</div>
                 <h3 class="benefit-title">Sesuai Sunnah</h3>
-                <p class="benefit-text">Madu dan gaharu adalah produk yang disebutkan dalam Al-Qur'an dan disukai Rasulullah SAW.</p>
+                <p class="benefit-text">Madu dan gaharu adalah produk yang disebutkan dalam Al-Qur'an dan disukai
+                    Rasulullah SAW.</p>
             </div>
 
             <div class="benefit-card">
                 <div class="benefit-icon">🌟</div>
                 <h3 class="benefit-title">Kualitas Ekspor</h3>
-                <p class="benefit-text">Standar kualitas internasional, dipilih dengan teliti oleh ahlinya untuk Anda.</p>
+                <p class="benefit-text">Standar kualitas internasional, dipilih dengan teliti oleh ahlinya untuk Anda.
+                </p>
             </div>
 
             <div class="benefit-card">
                 <div class="benefit-icon">🤝</div>
                 <h3 class="benefit-title">Dipercaya Umat</h3>
-                <p class="benefit-text">Sudah dipercaya ribuan keluarga Muslim Indonesia dan jamaah dari berbagai daerah.</p>
+                <p class="benefit-text">Sudah dipercaya ribuan keluarga Muslim Indonesia dan jamaah dari berbagai
+                    daerah.</p>
             </div>
 
             <div class="benefit-card">
@@ -969,7 +1167,8 @@
             <div class="benefit-card">
                 <div class="benefit-icon">🎁</div>
                 <h3 class="benefit-title">Cocok untuk Hadiah</h3>
-                <p class="benefit-text">Paket hampers Islami yang berkah, sempurna untuk hadiah istimewa keluarga dan kerabat.</p>
+                <p class="benefit-text">Paket hampers Islami yang berkah, sempurna untuk hadiah istimewa keluarga dan
+                    kerabat.</p>
             </div>
         </div>
     </section>
@@ -979,15 +1178,18 @@
         <div class="dalil-container">
             <div class="quran-icon">📖</div>
             <h2 class="section-title">Dalil dari Al-Qur'an</h2>
-            
+
             <p class="dalil-arabic">
-                ثُمَّ كُلِي مِن كُلِّ ٱلثَّمَرَٰتِ فَٱسْلُكِي سُبُلَ رَبِّكِ ذُلُلًا ۚ يَخْرُجُ مِن بُطُونِهَا شَرَابٌ مُّخْتَلِفٌ أَلْوَٰنُهُۥ فِيهِ شِفَآءٌ لِّلنَّاسِ
+                ثُمَّ كُلِي مِن كُلِّ ٱلثَّمَرَٰتِ فَٱسْلُكِي سُبُلَ رَبِّكِ ذُلُلًا ۚ يَخْرُجُ مِن بُطُونِهَا شَرَابٌ
+                مُّخْتَلِفٌ أَلْوَٰنُهُۥ فِيهِ شِفَآءٌ لِّلنَّاسِ
             </p>
-            
+
             <p class="dalil-translation">
-                "Kemudian makanlah dari segala (macam) buah-buahan, lalu tempuhlah jalan Tuhanmu yang telah dimudahkan (bagimu). Dari perut lebah itu keluar minuman (madu) yang bermacam-macam warnanya, di dalamnya terdapat obat yang menyembuhkan bagi manusia..."
+                "Kemudian makanlah dari segala (macam) buah-buahan, lalu tempuhlah jalan Tuhanmu yang telah dimudahkan
+                (bagimu). Dari perut lebah itu keluar minuman (madu) yang bermacam-macam warnanya, di dalamnya terdapat
+                obat yang menyembuhkan bagi manusia..."
             </p>
-            
+
             <p class="dalil-source">
                 (QS. An-Nahl: 69)
             </p>
@@ -1008,21 +1210,24 @@
         <div class="cta-box">
             <h2 class="cta-title">Siap Mendapatkan Produk Berkah?</h2>
             <p class="cta-text">
-                Jangan tunda lagi untuk memberikan yang terbaik bagi keluarga Anda. 
+                Jangan tunda lagi untuk memberikan yang terbaik bagi keluarga Anda.
                 Hubungi Ustadz Yusuf sekarang untuk konsultasi produk dan pemesanan.
             </p>
-            
+
             <div class="contact-info">
                 <svg width="30" height="30" viewBox="0 0 32 32" fill="#d4af37">
-                    <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z"/>
+                    <path
+                        d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z" />
                 </svg>
                 <span>+62 813-7517-6653</span>
             </div>
 
             <div class="cta-buttons">
-                <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20bertanya%20tentang%20produk%20LADAIK" class="btn-primary" target="_blank">
+                <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20saya%20ingin%20bertanya%20tentang%20produk%20LADAIK"
+                    class="btn-primary" target="_blank">
                     <svg width="24" height="24" viewBox="0 0 32 32" fill="white">
-                        <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z"/>
+                        <path
+                            d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z" />
                     </svg>
                     Chat via WhatsApp
                 </a>
@@ -1043,11 +1248,12 @@
             <p class="footer-text">
                 Produk Sunnah Berkualitas untuk Kesehatan & Keberkahan Keluarga Muslim
             </p>
-            
+
             <div class="footer-links">
                 <a href="#products" class="footer-link">Produk</a>
                 <a href="https://wa.me/6281375176653" class="footer-link" target="_blank">Kontak</a>
-                <a href="https://wa.me/6281375176653?text=Saya%20ingin%20menjadi%20reseller" class="footer-link" target="_blank">Reseller</a>
+                <a href="https://wa.me/6281375176653?text=Saya%20ingin%20menjadi%20reseller" class="footer-link"
+                    target="_blank">Reseller</a>
                 <span style="color: #666;">|</span>
                 <a href="sitemap.html" class="footer-link">Sitemap</a>
                 <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
@@ -1099,4 +1305,5 @@
         });
     </script>
 </body>
+
 </html>

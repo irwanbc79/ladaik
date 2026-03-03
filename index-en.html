@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LADAIK - Export Quality | Original form Indoneisa | Honey & Agarwood | Sunnah Products</title>
-    <meta name="description" content="Pure Acasia Forest Farm honey, Agarwood Oil & Wood export quality. Sunnah products chosen by Ustadz Yusuf for health and blessings of Muslim families.">
-    <meta name="keywords" content="sunnah honey, pure honey, agarwood, oud oil, agarwood oil, islamic products, raw honey, agarwood wood">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <title>LADAIK - Export Quality | Original from Indonesia | Honey, Agarwood & Imported Dates | Sunnah Products
+    </title>
+    <meta name="description"
+        content="Pure Acacia Forest Farm honey, Agarwood Oil & Wood export quality, Premium Imported Dates from Middle East. Sunnah products chosen by Ustadz Yusuf for health and blessings of Muslim families.">
+    <meta name="keywords"
+        content="sunnah honey, pure honey, agarwood, oud oil, agarwood oil, islamic products, raw honey, agarwood wood, ajwa dates, sukkari dates, deglet noor, imported dates">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Amiri:wght@400;700&display=swap"
+        rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -54,12 +60,19 @@
         }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
         }
 
         header {
-            background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 100%);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 100%);
             padding: 1rem 2rem;
             position: sticky;
             top: 0;
@@ -159,8 +172,13 @@
         }
 
         @keyframes moveGrid {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(50px, 50px); }
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(50px, 50px);
+            }
         }
 
         .hero-content {
@@ -353,8 +371,17 @@
         }
 
         @keyframes glow {
-            0%, 100% { transform: scale(1); opacity: 0.5; }
-            50% { transform: scale(1.2); opacity: 0.8; }
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 0.5;
+            }
+
+            50% {
+                transform: scale(1.2);
+                opacity: 0.8;
+            }
         }
 
         .product-image {
@@ -627,23 +654,146 @@
             color: #ffd700;
         }
 
+        /* Category Badges */
+        .hero-categories {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .category-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid rgba(212, 175, 55, 0.4);
+            border-radius: 50px;
+            color: #d4af37;
+            font-size: 1em;
+            font-weight: 600;
+            backdrop-filter: blur(10px);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: badgeFadeIn 0.6s ease forwards;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .category-badge:hover {
+            background: rgba(212, 175, 55, 0.25);
+            border-color: #d4af37;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.3);
+        }
+
+        .category-badge:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .category-badge:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .category-badge:nth-child(3) {
+            animation-delay: 0.8s;
+        }
+
+        .category-badge .badge-icon {
+            font-size: 1.3em;
+        }
+
+        .category-badge .badge-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #d4af37;
+            animation: dotPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes badgeFadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes dotPulse {
+
+            0%,
+            100% {
+                opacity: 0.4;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.5);
+            }
+        }
+
+        /* Responsive */
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2em; }
-            .section-title { font-size: 2em; }
-            .product-grid { grid-template-columns: 1fr; }
-            .cta-buttons { flex-direction: column; }
-            .header-content { flex-direction: column; gap: 15px; text-align: center; }
-            .language-switcher { order: -1; }
-            .dalil-container { padding: 30px 20px; }
-            .dalil-arabic { font-size: 1.5em; }
-            .whatsapp-float { width: 55px; height: 55px; font-size: 28px; }
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .section-title {
+                font-size: 2em;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 15px;
+                text-align: center;
+            }
+
+            .language-switcher {
+                order: -1;
+            }
+
+            .dalil-container {
+                padding: 30px 20px;
+            }
+
+            .dalil-arabic {
+                font-size: 1.5em;
+            }
+
+            .whatsapp-float {
+                width: 55px;
+                height: 55px;
+                font-size: 28px;
+            }
+
+            .hero-categories {
+                gap: 10px;
+            }
+
+            .category-badge {
+                padding: 10px 18px;
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
+
 <body>
-    <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20I%20want%20to%20ask%20about%20LADAIK%20products" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20I%20want%20to%20ask%20about%20LADAIK%20products"
+        class="whatsapp-float" target="_blank">
         <svg width="35" height="35" viewBox="0 0 32 32" fill="white">
-            <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z"/>
+            <path
+                d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z" />
         </svg>
     </a>
 
@@ -658,7 +808,8 @@
                     <a href="index-en.html" class="lang-btn active">🇬🇧 EN</a>
                     <a href="index-ar.html" class="lang-btn">🇸🇦 AR</a>
                 </div>
-                <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20I%20want%20to%20order%20LADAIK%20products" class="header-cta" target="_blank">
+                <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20I%20want%20to%20order%20LADAIK%20products"
+                    class="header-cta" target="_blank">
                     Order Now
                 </a>
             </div>
@@ -668,19 +819,41 @@
     <section class="hero">
         <div class="hero-content">
             <div class="bismillah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
-            <h1>Export Quality Honey & Agarwood<br>Original from Indonesia<br>Blessed Sunnah Products</h1>
-            <p class="hero-subtitle">The Best Choice for Muslim Families for Health, Stamina & Immunity</p>
-            
+            <h1>Pure Honey · Premium Agarwood · Imported Dates<br>Quality Sunnah Products from Indonesia & Middle East
+            </h1>
+            <p class="hero-subtitle">The Best Choice for Muslim Families for Health, Stamina & Blessings</p>
+
+            <div class="hero-categories">
+                <a href="#products" class="category-badge">
+                    <span class="badge-icon">🍯</span>
+                    <span>Pure Honey</span>
+                    <span class="badge-dot"></span>
+                </a>
+                <a href="#products" class="category-badge">
+                    <span class="badge-icon">🪵</span>
+                    <span>Export Agarwood</span>
+                    <span class="badge-dot"></span>
+                </a>
+                <a href="#kurma-impor" class="category-badge">
+                    <span class="badge-icon">🌴</span>
+                    <span>Imported Dates</span>
+                    <span class="badge-dot"></span>
+                </a>
+            </div>
+
             <div class="ustadz-profile">
-                <img src="ustadz-yusuf.jpg" alt="Ustadz Yusuf" class="ustadz-photo" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1FFR6yGBYu80zAMlipTZGJ5ZNyyYCsZ9u';">
+                <img src="ustadz-yusuf.jpg" alt="Ustadz Yusuf" class="ustadz-photo"
+                    onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1FFR6yGBYu80zAMlipTZGJ5ZNyyYCsZ9u';">
                 <div class="ustadz-name">Ustadz Yusuf</div>
                 <div class="ustadz-title">Official LADAIK Distributor</div>
             </div>
 
             <div class="cta-buttons">
-                <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20I%20want%20to%20ask%20about%20LADAIK%20products" class="btn-primary" target="_blank">
+                <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20I%20want%20to%20ask%20about%20LADAIK%20products"
+                    class="btn-primary" target="_blank">
                     <svg width="24" height="24" viewBox="0 0 32 32" fill="white">
-                        <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z"/>
+                        <path
+                            d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z" />
                     </svg>
                     Contact Ustadz Yusuf
                 </a>
@@ -692,19 +865,20 @@
     <section id="products" class="products">
         <h2 class="section-title">Our Selected Products</h2>
         <p class="section-subtitle">Guaranteed Quality • Halal & Thayyib • Carefully Selected</p>
-        
+
         <div class="product-grid">
             <div class="product-card">
                 <div class="product-image-container">
                     <div class="glow-effect"></div>
-                    <img src="madu-ladaik.jpg" alt="LADAIK Honey" class="product-image" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1JTBOtabU9CXtW7yzcYQCyUYd0H8ASkv2';">
+                    <img src="madu-ladaik.jpg" alt="LADAIK Honey" class="product-image"
+                        onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1JTBOtabU9CXtW7yzcYQCyUYd0H8ASkv2';">
                     <span class="product-badge">Best Seller</span>
                 </div>
                 <div class="product-info">
                     <h3 class="product-title">LADAIK Honey</h3>
                     <p class="product-subtitle">Acasia Forest Farm - 100% Nectar Raw Honey</p>
                     <p class="arabic-text" style="font-size: 1.2em; margin: 15px 0;">لديك</p>
-                    
+
                     <ul class="product-features">
                         <li>100% Pure Natural Honey</li>
                         <li>Harvested at the perfect time</li>
@@ -720,7 +894,8 @@
                         <div class="price-note">*Price per bottle | Various sizes available</div>
                     </div>
 
-                    <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20I%20want%20to%20order%20LADAIK%20Honey" class="product-cta" target="_blank">
+                    <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20I%20want%20to%20order%20LADAIK%20Honey"
+                        class="product-cta" target="_blank">
                         Order Honey Now
                     </a>
                 </div>
@@ -729,13 +904,14 @@
             <div class="product-card">
                 <div class="product-image-container">
                     <div class="glow-effect"></div>
-                    <img src="minyak-gaharu.jpg" alt="Agarwood Oil" class="product-image" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1luNHfGNlHABhE1PbhXFKhFEdpzu2bVf_';">
+                    <img src="minyak-gaharu.jpg" alt="Agarwood Oil" class="product-image"
+                        onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1luNHfGNlHABhE1PbhXFKhFEdpzu2bVf_';">
                     <span class="product-badge">Premium</span>
                 </div>
                 <div class="product-info">
                     <h3 class="product-title">Agarwood Oil</h3>
                     <p class="product-subtitle">Oud Oil - Export Quality</p>
-                    
+
                     <ul class="product-features">
                         <li>Luxurious & Classy Fragrance</li>
                         <li>Natural Aromatherapy</li>
@@ -751,7 +927,8 @@
                         <div class="price-note">*Various grades & sizes available</div>
                     </div>
 
-                    <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20I%20want%20to%20ask%20about%20Agarwood%20Oil%20price" class="product-cta" target="_blank">
+                    <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20I%20want%20to%20ask%20about%20Agarwood%20Oil%20price"
+                        class="product-cta" target="_blank">
                         Ask Price & Variants
                     </a>
                 </div>
@@ -760,13 +937,14 @@
             <div class="product-card">
                 <div class="product-image-container">
                     <div class="glow-effect"></div>
-                    <img src="kayu-gaharu.jpg" alt="Agarwood" class="product-image" onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1luNHfGNlHABhE1PbhXFKhFEdpzu2bVf_';">
+                    <img src="kayu-gaharu.jpg" alt="Agarwood" class="product-image"
+                        onerror="this.onerror=null; this.src='https://drive.google.com/uc?export=view&id=1luNHfGNlHABhE1PbhXFKhFEdpzu2bVf_';">
                     <span class="product-badge">Exclusive</span>
                 </div>
                 <div class="product-info">
                     <h3 class="product-title">Agarwood</h3>
                     <p class="product-subtitle">Agarwood - Export Grade Quality</p>
-                    
+
                     <ul class="product-features">
                         <li>Premium Selected Agarwood</li>
                         <li>For Premium Incense/Bakhoor</li>
@@ -782,9 +960,116 @@
                         <div class="price-note">*Price based on grade & weight</div>
                     </div>
 
-                    <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20I%20want%20to%20ask%20about%20Agarwood" class="product-cta" target="_blank">
+                    <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20I%20want%20to%20ask%20about%20Agarwood"
+                        class="product-cta" target="_blank">
                         Product Consultation
                     </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Imported Premium Dates -->
+        <div id="kurma-impor"
+            style="max-width: 1200px; margin: 60px auto 0; padding: 0 2rem; border-top: 2px solid rgba(212, 175, 55, 0.2); padding-top: 60px;">
+            <h3
+                style="text-align: center; color: #d4af37; font-size: 1.5em; margin-bottom: 20px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+                <span style="font-size: 1.3em;">🌍</span> Premium Imported Dates
+            </h3>
+            <p style="text-align: center; color: #b8b8b8; margin-bottom: 30px;">The finest selection from Middle East
+            </p>
+        </div>
+
+        <div class="product-grid">
+            <!-- Kurma Ajwa -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="glow-effect"></div>
+                    <img src="kurma-ajwa.jpg?v=2" alt="Ajwa Dates Madinah" class="product-image">
+                    <span class="product-badge"
+                        style="background: linear-gradient(135deg, #1e90ff 0%, #00bfff 100%); color: white;">🌍
+                        Imported</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Ajwa Dates Madinah</h3>
+                    <p class="product-subtitle">Premium Import from Saudi Arabia</p>
+                    <p class="arabic-text" style="font-size: 1.2em; margin: 15px 0;">التمر العجوة</p>
+                    <ul class="product-features">
+                        <li>Authentic from Madinah Al-Munawwarah</li>
+                        <li>Sweet taste & soft texture</li>
+                        <li>Mentioned in Prophet's Hadith</li>
+                        <li>Rich in nutrients & minerals</li>
+                        <li>Premium & hygienic packaging</li>
+                        <li>Import authenticity certificate</li>
+                    </ul>
+                    <div class="price-container">
+                        <div class="price-label">Price:</div>
+                        <div class="price">Chat for Latest Price</div>
+                        <div class="price-note">*Prices may change at any time</div>
+                    </div>
+                    <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20I%20want%20to%20order%20Ajwa%20Dates%20Madinah"
+                        class="product-cta" target="_blank">Order Ajwa Dates</a>
+                </div>
+            </div>
+
+            <!-- Kurma Sukkari -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="glow-effect"></div>
+                    <img src="kurma-sukkari.jpg?v=2" alt="Sukkari Dates" class="product-image">
+                    <span class="product-badge"
+                        style="background: linear-gradient(135deg, #1e90ff 0%, #00bfff 100%); color: white;">🌍
+                        Imported</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Sukkari Dates</h3>
+                    <p class="product-subtitle">Premium Quality from Al-Qassim</p>
+                    <p class="arabic-text" style="font-size: 1.2em; margin: 15px 0;">التمر السكري</p>
+                    <ul class="product-features">
+                        <li>Known as the "King of Dates"</li>
+                        <li>Premium sweet taste like sugar</li>
+                        <li>Soft & juicy texture</li>
+                        <li>High antioxidant content</li>
+                        <li>Suitable for all ages</li>
+                        <li>Directly imported from Saudi Arabia</li>
+                    </ul>
+                    <div class="price-container">
+                        <div class="price-label">Price:</div>
+                        <div class="price">Chat for Latest Price</div>
+                        <div class="price-note">*Prices may change at any time</div>
+                    </div>
+                    <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20I%20want%20to%20order%20Sukkari%20Dates"
+                        class="product-cta" target="_blank">Order Sukkari Dates</a>
+                </div>
+            </div>
+
+            <!-- Kurma Deglet Noor -->
+            <div class="product-card">
+                <div class="product-image-container">
+                    <div class="glow-effect"></div>
+                    <img src="kurma-deglet-noor.jpg?v=2" alt="Deglet Noor Dates" class="product-image">
+                    <span class="product-badge"
+                        style="background: linear-gradient(135deg, #1e90ff 0%, #00bfff 100%); color: white;">🌍
+                        Imported</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Deglet Noor Dates</h3>
+                    <p class="product-subtitle">Premium Import from Tunisia</p>
+                    <p class="arabic-text" style="font-size: 1.2em; margin: 15px 0;">تمر دقلة النور</p>
+                    <ul class="product-features">
+                        <li>World-renowned quality dates</li>
+                        <li>Natural translucent brown color</li>
+                        <li>Smooth & not too sweet taste</li>
+                        <li>Optimal delicious texture</li>
+                        <li>Rich in fiber & complete nutrition</li>
+                        <li>Import & halal certificate</li>
+                    </ul>
+                    <div class="price-container">
+                        <div class="price-label">Price:</div>
+                        <div class="price">Chat for Latest Price</div>
+                        <div class="price-note">*Prices may change at any time</div>
+                    </div>
+                    <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20I%20want%20to%20order%20Deglet%20Noor%20Dates"
+                        class="product-cta" target="_blank">Order Deglet Noor</a>
                 </div>
             </div>
         </div>
@@ -793,18 +1078,20 @@
     <section class="benefits">
         <h2 class="section-title">Why Choose LADAIK?</h2>
         <p class="section-subtitle">Our Commitment to Quality & Blessings</p>
-        
+
         <div class="benefits-grid">
             <div class="benefit-card">
                 <div class="benefit-icon">✓</div>
                 <h3 class="benefit-title">100% Authentic & Halal</h3>
-                <p class="benefit-text">Guaranteed authentic products, halal, and thayyib. No mixture or harmful chemicals.</p>
+                <p class="benefit-text">Guaranteed authentic products, halal, and thayyib. No mixture or harmful
+                    chemicals.</p>
             </div>
 
             <div class="benefit-card">
                 <div class="benefit-icon">🕌</div>
                 <h3 class="benefit-title">Following Sunnah</h3>
-                <p class="benefit-text">Honey and agarwood are products mentioned in the Quran and loved by Prophet Muhammad ﷺ.</p>
+                <p class="benefit-text">Honey and agarwood are products mentioned in the Quran and loved by Prophet
+                    Muhammad ﷺ.</p>
             </div>
 
             <div class="benefit-card">
@@ -816,7 +1103,8 @@
             <div class="benefit-card">
                 <div class="benefit-icon">🤝</div>
                 <h3 class="benefit-title">Trusted by Muslims</h3>
-                <p class="benefit-text">Trusted by thousands of Indonesian Muslim families and congregations from various regions.</p>
+                <p class="benefit-text">Trusted by thousands of Indonesian Muslim families and congregations from
+                    various regions.</p>
             </div>
 
             <div class="benefit-card">
@@ -828,7 +1116,8 @@
             <div class="benefit-card">
                 <div class="benefit-icon">🎁</div>
                 <h3 class="benefit-title">Perfect for Gifts</h3>
-                <p class="benefit-text">Blessed Islamic hampers package, perfect for special gifts to family and relatives.</p>
+                <p class="benefit-text">Blessed Islamic hampers package, perfect for special gifts to family and
+                    relatives.</p>
             </div>
         </div>
     </section>
@@ -837,15 +1126,17 @@
         <div class="dalil-container">
             <div class="quran-icon">📖</div>
             <h2 class="section-title">Evidence from the Quran</h2>
-            
+
             <p class="dalil-arabic">
-                ثُمَّ كُلِي مِن كُلِّ ٱلثَّمَرَٰتِ فَٱسْلُكِي سُبُلَ رَبِّكِ ذُلُلًا ۚ يَخْرُجُ مِن بُطُونِهَا شَرَابٌ مُّخْتَلِفٌ أَلْوَٰنُهُۥ فِيهِ شِفَآءٌ لِّلنَّاسِ
+                ثُمَّ كُلِي مِن كُلِّ ٱلثَّمَرَٰتِ فَٱسْلُكِي سُبُلَ رَبِّكِ ذُلُلًا ۚ يَخْرُجُ مِن بُطُونِهَا شَرَابٌ
+                مُّخْتَلِفٌ أَلْوَٰنُهُۥ فِيهِ شِفَآءٌ لِّلنَّاسِ
             </p>
-            
+
             <p class="dalil-translation">
-                "Then eat from all the fruits and follow the ways of your Lord laid down [for you]. There emerges from their bellies a drink, varying in colors, in which there is healing for people..."
+                "Then eat from all the fruits and follow the ways of your Lord laid down [for you]. There emerges from
+                their bellies a drink, varying in colors, in which there is healing for people..."
             </p>
-            
+
             <p class="dalil-source">
                 (QS. An-Nahl: 69)
             </p>
@@ -865,21 +1156,24 @@
         <div class="cta-box">
             <h2 class="cta-title">Ready to Get Blessed Products?</h2>
             <p class="cta-text">
-                Don't delay giving the best for your family. 
+                Don't delay giving the best for your family.
                 Contact Ustadz Yusuf now for product consultation and orders.
             </p>
-            
+
             <div class="contact-info">
                 <svg width="30" height="30" viewBox="0 0 32 32" fill="#d4af37">
-                    <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z"/>
+                    <path
+                        d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z" />
                 </svg>
                 <span>+62 813-7517-6653</span>
             </div>
 
             <div class="cta-buttons">
-                <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20I%20want%20to%20ask%20about%20LADAIK%20products" class="btn-primary" target="_blank">
+                <a href="https://wa.me/6281375176653?text=Assalamualaikum%20Ustadz,%20I%20want%20to%20ask%20about%20LADAIK%20products"
+                    class="btn-primary" target="_blank">
                     <svg width="24" height="24" viewBox="0 0 32 32" fill="white">
-                        <path d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z"/>
+                        <path
+                            d="M16 0C7.163 0 0 7.163 0 16c0 2.825.743 5.589 2.155 8.02L.05 31.95l8.168-2.142A15.93 15.93 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm7.981 22.748c-.336.945-1.669 1.733-2.726 1.959-.728.15-1.677.272-4.866-1.045-4.071-1.681-6.698-5.84-6.899-6.11-.195-.27-1.595-2.124-1.595-4.053 0-1.929 1.01-2.878 1.368-3.268.358-.39.781-.488 1.041-.488.26 0 .521.002.75.014.241.011.563-.092.881.672.326.785 1.113 2.714 1.21 2.91.098.195.163.423.033.682-.13.26-.195.423-.39.651-.195.228-.41.509-.586.683-.195.195-.398.406-.171.797.228.39 1.011 1.667 2.171 2.698 1.491 1.326 2.748 1.738 3.138 1.933.39.195.618.163.846-.098.228-.26.976-1.139 1.236-1.529.26-.39.521-.325.881-.195.358.13 2.286 1.078 2.677 1.275.39.195.651.293.748.455.098.163.098.945-.238 1.89z" />
                     </svg>
                     Chat via WhatsApp
                 </a>
@@ -899,11 +1193,12 @@
             <p class="footer-text">
                 Quality Sunnah Products for Health & Blessings of Muslim Families
             </p>
-            
+
             <div class="footer-links">
                 <a href="#products" class="footer-link">Products</a>
                 <a href="https://wa.me/6281375176653" class="footer-link" target="_blank">Contact</a>
-                <a href="https://wa.me/6281375176653?text=I%20want%20to%20become%20a%20reseller" class="footer-link" target="_blank">Reseller</a>
+                <a href="https://wa.me/6281375176653?text=I%20want%20to%20become%20a%20reseller" class="footer-link"
+                    target="_blank">Reseller</a>
                 <span style="color: #666;">|</span>
                 <a href="sitemap.html" class="footer-link">Sitemap</a>
                 <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
@@ -913,7 +1208,7 @@
 
             <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid rgba(212, 175, 55, 0.2);">
                 <p class="footer-text" style="font-size: 0.9em;">
-                    © 2025 LADAIK. All Rights Reserved.<br>
+                    © 2026 LADAIK. All Rights Reserved.<br>
                     Official Distributor: Ustadz Yusuf | WhatsApp: +62 813-7517-6653
                 </p>
             </div>
@@ -953,4 +1248,5 @@
         });
     </script>
 </body>
+
 </html>
